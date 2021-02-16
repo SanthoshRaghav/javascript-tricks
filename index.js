@@ -2,9 +2,10 @@
  *  splice
  */
 
-// SYNTAX   : array.splice(index, deleteCount, insertItem1, ....., insertItemX)
-// OPTIONAL : deleteCount, insertItem1
-// RETURNS  : an array, it contains deleted elements
+// SYNTAX     : array.splice(index, deleteCount, insertItem1, ....., insertItemX)
+// OPTIONAL   : deleteCount, insertItem1
+// RETURNS    : an array, it contains deleted elements
+// SPECIALITY : we add multiple elements in the middle of the array, with or without deleting elements
 
 // index -> from which index should add or delete, deleteCount -> delete, insertItem1 -> add
 
