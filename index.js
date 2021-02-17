@@ -12,3 +12,15 @@
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 arr.splice(2, 0, ...arr.splice(7, 1)); // [1, 2, 8, 3, 4, 5, 6, 7, 9]
+
+/**
+ *  find
+ */
+
+// SYNTAX     : array.splice(index, deleteCount, insertItem1, ....., insertItemX)
+// RETURNS    : it returns the first element, that passes the test
+// SPECIALITY : we add multiple elements in the middle of the array, with or without deleting elements
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+arr.splice(2, 0, ...arr.splice(7, 1)); // [1, 2, 8, 3, 4, 5, 6, 7, 9]
