@@ -34,6 +34,7 @@ arr.splice(2, 0, ...arr.splice(7, 1)); // [1, 2, 8, 3, 4, 5, 6, 7, 9]
  *  find
  */
 
+// REQUIRED   : function
 // RETURNS    : element or undefined
 // SPECIALITY : we can pick an element from an array, instaed of picking it by index(static). using find() makes more dynamic.
 // EXECUTION  : once the function returns the element, it won't run on remaining elements.
@@ -47,6 +48,7 @@ arr.find((item) => item === 19); // undefined
  *  findIndex
  */
 
+// REQUIRED   : function
 // RETURNS    : element index or -1
 // SPECIALITY : to find the index of an element from an array.
 // EXECUTION  : once the function returns the index, it won't run on remaining elements.
@@ -55,3 +57,17 @@ arr.find((item) => item === 19); // undefined
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 arr.find((item) => item === 19); // -1
+
+/**
+ *  some
+ */
+
+// REQUIRED   : function
+// RETURNS    : true or false
+// SPECIALITY : to find whether an array contains the element or not. similar to Array.includes(), but we can have a logic(expression) inside some() but not possible in Array.includes()
+// EXECUTION  : once the function returns the index, it won't run on remaining elements.
+// JS VERSION : ECMAScript 3
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+arr.find((item) => item % 2 === 0); // true
